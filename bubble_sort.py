@@ -1,3 +1,6 @@
+#Christopher Ward
+#MPCS 50101, Winter 2015
+#Homework 6
 import random
 
 def sort(items):
