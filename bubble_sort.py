@@ -7,9 +7,13 @@ def sort(items):
   # 1. TO DO: Implement a "bubble sort" routine here
   swap = -1
   i = -1
+  swapcounter = 0
+
+  print("Original list: " + str(items))
 
   #while-loop conditions determine whether complete pass was made without a swap
   while swap != 0 or i != (len(items) - 1):
+    swapcounter += 1
     i = 0
     swap = 0
     #while-loop condition determines whether two adjacent values need to be swapped
@@ -18,6 +22,7 @@ def sort(items):
         items[i], items[i+1] = items[i+1], items[i]
         swap = 1
       i += 1
+    print("Pass #" + str(swapcounter) + ": " + str(items))
   return items
 
 
